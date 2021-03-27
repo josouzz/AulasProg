@@ -36,7 +36,3 @@ console.log(typeof dicionario)
 let infinito = infinity;
 console.log(infinito);
 
-
-//sdcfadfsasafadfsafca
-
-//sddddddddddddddddddddddddddddd
