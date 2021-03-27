@@ -5,4 +5,4 @@ A diferença entre  - git add . vs git add -a
 1) git add . organiza todas as modificações e os novos arquivos.
 2) git add -A organiza todas as mudanças feitas.
 
-O git add . não organiza("salva") as exclusões, ou seja, seu uso é especializado para as circunstância onde houve alguma exclusão que você não quer que seja "salvada", o uso do -A é para situações onde é desejado a organização de todas as mudanças.
+O git add . é usado quando se quer adicionar apenas modificaçãos e novos arquivos, menos as exclusões. O git add -a é usado quando se quer adicionar todas as mudanças, incluindo as exclusões.
