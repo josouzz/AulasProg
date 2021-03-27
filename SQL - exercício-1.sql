@@ -1,12 +1,14 @@
--- Criar uma base de dados de Clientes
-
+/*
+Criar uma base de dados de Cadastros, uma tabela relacionada a cadastros. Usar alter table para: add column,
+drop column, change column e modify column
+*/
 create database cadastros
 default character set utf8
 default collate utf8_general_ci;
 -- Criei a base de dados nomeada de cadastros e defini para caractéres brasileiros
 
 use cadastros;
-create table pessoas(
+create table clientes(
     id int not null auto_increment,
     nome varchar(30) not null,
     nascimento date,
@@ -17,14 +19,14 @@ create table pessoas(
     primary key (id)
 ) default charset = utf8
 /* Antes de criar o table, é preciso selecionar a database, por isso o "use cadastros"
-   Dados que decidi coletar: nome, nascimento, sexo, peso, altura e nacionalidade
+   Dados que decidi coletar para tabela clientes: nome, nascimento, sexo, peso, altura e nacionalidade
 */
 
-desc pessoas;
+desc clientes;
 -- Esse comando me mostra as colunas da minha base de dados e quais são os tipos primitivos que atribuí
 
 
-insert into pessoas values
+insert into clientes values
 (default, 'Pedro', '1997-02-31', 'M', '69', '1.65', 'Argentina'),
 (default, 'Angeline', '1989-11-11', 'F', '55', '1.7', 'França'),
 (default,'Carolina', '1970-01-08', 'F', '63.23', '1,65', default),
@@ -43,27 +45,26 @@ insert into pessoas values
 /*
 Insert into é o comando para fazer os inputs na base de dados */
 
-select * from pessoas;
--- comando para vizualizar os dados da database
-
-alter table pessoas 
+select * from clientes;
+-- comando para visualizar os dados da databaseos dados da tabela cliente
+alter table clientes 
 add column profissão varchar (10);
 --Comando para alterar a tabela, aqui eu adicionei uma coluna
 
-alter table pessoas
+alter table clientess
 drop column profissão;
 -- Nesse alter table eu apaguei a coluna antes adicionada
 
-alter table pessoas
+alter table clientes
 add column profissao varchar(15) after nome;
 -- Readicionei a coluna profissão e a posicionei após a coluna nome
 
-alter table pessoas 
+alter table clientes 
 modify profissao varchar (20) not null default ' ';
 --Modifiquei o valor da constraint varchar para 25 e defini que não podia receber valores nulos
 
-alter table pessoas 
+alter table clientes 
 change column profissao profissão varchar (25);
 --Minha última alteração foi usando o comando change para alterar o nome da coluna
 
-select * from pessoas;
+select * from clientes;
