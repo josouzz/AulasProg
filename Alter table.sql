@@ -39,9 +39,9 @@ insert into clientes values
 (default, 'Iolanda', '1987-045-24', 'F', '69', '1.65', 'Brasil'),
 (default, 'José', '1987-11-11', 'F', '55', '1.7', 'Portugal'),
 (default,'Igor', '1975-01-28', 'F', '63.23', '1.75', default),
-(default, 'João', '1996-10-16', 'M', '130.00', '1.8', default),
-(default, 'Leticia', '1998-10-02', 'F', '65.3', '1.69', default),
-(default, 'Itamar', '1973-07-09', 'M', '85.6', '1.73', default);
+(default, 'Giuseppe', '1990-10-16', 'M', '100.00', '1.85', default),
+(default, 'Carola', '1998-11-02', 'F', '67.3', '1.59', default),
+(default, 'Ricardo', '1973-09-09', 'M', '86', '1.83', default);
 /*
 Insert into é o comando para fazer os inputs na base de dados */
 
