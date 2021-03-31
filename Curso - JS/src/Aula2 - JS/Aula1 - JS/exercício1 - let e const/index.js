@@ -44,5 +44,5 @@ let idade = 24;
 let altura = 180;
 let força = 8000.1;
 
-console.log(typeof idade)
+console.log(typeof "hello world!")
 
