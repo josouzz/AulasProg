@@ -8,13 +8,18 @@
  let c = 0 || 0 && true || false;
  let d = 10 || 20 && "texto" && -1;
  
+ /*
+ console.log("a: ", a); 
+console.log("b: ", b);
+console.log("c: ", c);
+console.log("d: ", d); */
 
  /**
   * Resultados do exercício 1, antes de rodar o node.js:
   * A) FALSE
-  * B)TRUE
-  * C)TRUE
-  * D)TRUE
+  * B)-1
+  * C)FALSE
+  * D) N SEI   
   */
  
  /**
