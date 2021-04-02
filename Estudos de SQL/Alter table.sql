@@ -68,3 +68,14 @@ change column profissao profissão varchar (25);
 --Minha última alteração foi usando o comando change para alterar o nome da coluna
 
 select * from clientes;
+
+/*
+    Como vimos, o Alter Table é um DDL = Data Defition Language, ou seja um comando que altera a estrutura da 
+base de dados. o Alter table faz modificações na estrutura da tabela, as mudança que são possíveis de fazer com
+alter table são: add, este comando serve para adicionar novas colunas; drop, este comando serve para apagar uma 
+coluna existente; modify, esse comando serve para mudar constraints e caraterísticas de uma coluna já existente;
+change, este comando além de realizar as mudanças do modify, ele também muda o nome da coluna no mesmo comando.
+   Outros parâmetros que podem ser usados juntos ao alter table são: associar o uso de after ou first juntos do
+add, com o after a caluna é adicionada na depois de outra que você pode definir e com o fistr a coluna adicionada 
+é definida como a primeira coluna da tabela;
+*/
