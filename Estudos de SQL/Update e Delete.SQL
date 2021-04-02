@@ -40,18 +40,35 @@ select * from cursos;
 update cursos
 set nome = 'HTML5'
 where idcurso = 1;
+-- Estrutura base do update
+
 
 update cursos
 set nome = 'PHP', ano = '2015'
 where idcurso=4;
+-- Usando update pra alterar duas colunas ao mesmo tempo
+
 
 update cursos
 set nome = 'JAVA', carga = '40', ano = '2015'
 where idcurso = '5'
 limit 1;
+-- Usando update para mudar trÊs colunas ao mesmo tempo e o limit = 1 limita as alterações a apenas uma linha
+
 
 delete from cursos
 where ano = '2018'
 limit 3;
+-- Como usei um where presente em diversas linhas, usei o limit = 3 para só 3 linhas sofrerem alterações
+
 
 select * from cursos;
+
+/*
+    O comando update é muito importante, é um comando de DML, você o utiliza para manipular os dados da tabela e 
+não sua estrutura, por exemplo: update cursos, set nome = 'HTML5', where idcurso = 1 - esse comando sinaliza que 
+há um upgdate a se fazer na tablea cursos, na coluna nome haverá uma mudança de um nome para 'HTML5' na linha com
+idcurso é 1. 
+    Where define o parâmetro que será o filtro de linhas para sofrer alterações, você pode associar com o "limit"
+e limitar o número de linhas que sofrerão alterações.
+*/
