@@ -1,3 +1,7 @@
+/* Usando um loop while, escreva um algoritmo que, dado um número "aleatório", verifique se esse número se encontra na sequência de
+fibonacci.
+*/
+
 let numeroAnterior1 = 1;
 let numeroAnterior2 = 1;
 let numeroAtual = numeroAnterior1 + numeroAnterior2;
@@ -16,6 +20,3 @@ if (numeroAleatorio === numeroAtual) {
 } else {
    console.log('O número ${numeroAleatorio} não pertence à sequência de Fibonacci.');
 } 
-
-
-
