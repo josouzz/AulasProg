@@ -1,0 +1,32 @@
+numero -> 4
+fibonacci -> [1, 1, 2, 3]
+
+LOOP: i = 1; i <= numero; i++;
+    1 <= 4 -> true;
+
+    i = 1: i <= numero -> true;
+        IF (i === 1 || i === 2) -> true
+            fibonacci[0] = 1
+        i++;
+    i = 2: i <= numero -> true;
+        IF (i === 1 || i === 2) -> true
+            fibonacci[1] = 1
+        i++
+    i = 3: i <= numero -> true;
+        IF (i === 1 || i === 2) -> false
+        ELSE:
+            fibonacci[2] = fibonacci[1] + fibonacci[0]
+            fibonacci[2] = 1 + 1
+            fibonacci[2] = 2
+        i++;
+    i = 4: i <= numero -> true
+        IF (i === 1 || i === 2) -> false
+        ELSE:
+            fibonacci[3] = fibonacci[2] + fibonacci[1]
+            fibonacci[3] = 2 + 1
+            fibonacci[3] = 3
+        i++
+    i = 5: i <= numero -> false
+EXIT LOOP
+
+EXIBE TELA -> [1, 1, 2, 3]
