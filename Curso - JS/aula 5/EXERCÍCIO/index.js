@@ -15,7 +15,7 @@ const listaDeValores = [100, 123, 44, 77, 59, 129, -54, -334, 2, 0];
 let listaDeMultiplicacao = new Array();
 
 for (i = 0; i < listaDeValores.length; i++){
- if (i < 9){
+ if (i < listaDevalores.length){
      listaDeMultiplicacao.push( listaDeValores[0+i] * listaDeValores[1+i] );
 }else{
     listaDeMultiplicacao.push(0);
