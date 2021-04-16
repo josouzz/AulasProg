@@ -41,21 +41,20 @@ console.log(listaDeMultiplicacao)
 // 2) Dada uma palavra inserida pelo usuário (vocês, no caso) imprima na tela a quantidade de letras dessa palavra e a 
 // quantidade de vogais.
   
-  
-const texto = "um texto qualquer";
+/* 
+const texto = "Joao";
 let texto1 = new Array()
-//for (let i = 0; i < texto.length; i++) {
-//    console.log(texto[i]);
-//    texto1.push(texto[i])
-//
-//}
+for (let i = 0; i < texto.length; i++) {
+       texto1.push(texto[i]);
+
+}
 
 function analisedetexto() {
     let quantasVogais = 0
-    for (i = 0; i < texto.length; i++){
-        if(texto[i] === 'a' || texto[i] === 'A' || texto[i] === 'e' || texto[i] === 'E' || texto[i] === 'i'||
-        texto[i] === 'I' || texto[i] === 'o' || texto[i] === 'O' || texto[i] === 'u' || texto[i] === 'U') {
-            quantasVogais++
+    for (i = 0; i < texto1.length; i++){
+        if(texto1[i] === 'a' || texto1[i] === 'A' || texto1[i] === 'e' || texto1[i] === 'E' || texto1[i] === 'i'||
+        texto1[i] === 'I' || texto1[i] === 'o' || texto1[i] === 'O' || texto1[i] === 'u' || texto1[i] === 'U') {
+            quantasVogais = quantasVogais + 1;
         }
         return quantasVogais
     }
@@ -66,6 +65,4 @@ analisedetexto();
 console.log(analisedetexto())
 console.log(` "${texto}" possui ${texto.length} letras e ${analisedetexto()} vogal`)
  
-
-
-
+*/
