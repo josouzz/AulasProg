@@ -1,7 +1,7 @@
 
 // PARA SEXTA FEIRA!
 
-/**
+/*
  * 1) Percorram a lista listaDeValores e, para cada elemento, multiplique o esse elemento pelo próximo da lista.
  * Note que: ao chegar no final da lista, não há um próximo elemento. Nesse caso, multiplique o último elemento pelo primeiro.
  * Salve os resultados das multiplicações num outro array e no final do programa, imprima a lista final na tela.
@@ -14,8 +14,8 @@
 const listaDeValores = [100, 123, 44, 77, 59, 129, -54, -334, 2, 0];
 let listaDeMultiplicacao = new Array();
 
-for (i = 0; i < 10; i++){
- if (i < 9){
+for (i = 0; i < listaDeValores.length; i++){
+ if (i < listaDevalores.length){
      listaDeMultiplicacao.push( listaDeValores[0+i] * listaDeValores[1+i] );
 }else{
     listaDeMultiplicacao.push(0);
