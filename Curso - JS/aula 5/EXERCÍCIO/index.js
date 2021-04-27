@@ -41,10 +41,10 @@ console.log(listaDeMultiplicacao)
 // 2) Dada uma palavra inserida pelo usuário (vocês, no caso) imprima na tela a quantidade de letras dessa palavra e a 
 // quantidade de vogais.
   
-/* 
-const texto = "Joao";
+
+const texto = "um texto qualquer";
 let texto1 = new Array()
-for (let i = 0; i < texto.length; i++) {
+for (let i = 0; i < texto.length - 1; i++) {
        texto1.push(texto[i]);
 
 }
@@ -65,4 +65,4 @@ analisedetexto();
 console.log(analisedetexto())
 console.log(` "${texto}" possui ${texto.length} letras e ${analisedetexto()} vogal`)
  
-*/
+

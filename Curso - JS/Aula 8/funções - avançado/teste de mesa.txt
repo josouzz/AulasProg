@@ -1,0 +1,28 @@
+
+TESTE DE MESA - resultadoDivisao()
+
+resto = 0;
+quociente = 3;
+
+resultado imprime tela = resultadoDivisao(12, 4);
+
+function resultadoDivisao(12, 4):
+    12 - 4 >= 0: true
+        quociente++;
+        retorno -> resultadoDivisao(12 - 4, 4);
+
+function resultadoDivisao(8, 4):
+    8 - 4 >= 0: true
+        quociente++;
+        retorno -> resultadoDivisao(8 - 4, 4);
+
+function resultadoDivisao(4, 4):
+    4 - 4 >= 0: true
+        quociente++;
+        retorno -> resultadoDivisao(4 - 4, 4);
+
+function resultadoDivisao(0, 4):
+    0 - 4 >= 0: false
+    else:
+        resto = 0
+        retorno -> {quociente: 3, resto: 0}
