@@ -1,0 +1,35 @@
+PILHA:
+
+
+
+|resultadoDivisao| -> 0, 4 -> {quociente: 3, resto: 0}
+|resultadoDivisao| -> 4, 4
+|resultadoDivisao| -> 8, 4
+|resultadoDivisao| -> 12, 4
+|_______log______|
+|      PILHA     |
+
+
+|resultadoDivisao| -> 4, 4 -> {quociente: 3, resto: 0}
+|resultadoDivisao| -> 8, 4
+|resultadoDivisao| -> 12, 4
+|_______log______|
+|      PILHA     |
+
+
+|resultadoDivisao| -> 8, 4 -> {quociente: 3, resto: 0}
+|resultadoDivisao| -> 12, 4
+|_______log______|
+|      PILHA     |
+
+
+|resultadoDivisao| -> 12, 4 -> {quociente: 3, resto: 0}
+|_______log______|
+|      PILHA     |
+
+
+| log({quociente: 3, resto: 0}) |
+|             PILHA             |
+
+
+|             PILHA             |
