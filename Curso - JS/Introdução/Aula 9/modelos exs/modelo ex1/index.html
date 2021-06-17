@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+  <title>Ex. 1</title>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>
+        Modelo para o primeiro ex:
+      </h1>
+    </header>
+    <div class="main">
+      <form>
+        <div class="row">
+          <h3>Lados:</h3>
+          <div class="row-wrapper">
+            <div class="flex-content">
+              <label for="input-lado-1">Lado 1:</label>
+              <input type="number" id="input-lado-1">
+            </div>
+            <div class="flex-content">
+              <label for="input-lado-2">Lado 2:</label>
+              <input type="number" id="input-lado-2">
+            </div>
+            <div class="flex-content">
+              <label for="input-lado-3">Lado 3:</label>
+              <input type="number" id="input-lado-3">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <button type="button" onclick="onButtonClick()">Verificar!</button>
+        </div>
+        <div class="row">
+          <h3>Resultado:</h3>
+        </div>
+        <div class="row">
+          <div class="flex-content">
+            <label for="output-tipo-triangulo">Tipo:</label>
+            <input type="text" id="output-tipo-triangulo" disabled>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
