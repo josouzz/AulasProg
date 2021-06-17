@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#conteiner-tarefas {
+  position: relative;
+  border: 0.125em solid rgb(128, 255, 1);
+  border-radius: 1em;
+  padding: 2rem 3rem 2rem 2rem;
+  height: 30%;
+  min-width: 300px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+#lista-de-tarefas.hidden {
+  display: none;
+}
+
+h3 {
+  width: 100%;
+  margin-bottom: 1em;
+  text-align: center;
+  border-bottom: 2px solid #333333;
+}
+
+ol {
+  list-style: upper-roman;
+  padding: 1rem;
+}
+
+li {
+  margin-left: 2rem;
+  position: relative;
+  margin: 12px 0;
+}
+
+.conteiner-icon {
+  position: absolute;
+  top: 1px;
+}
+
+#icone-muda,
+#icone-valida {
+  right: -22px;
+}
+
+#icone-exclui,
+#icone-desfaz {
+  right: -48px;
+}
+
+#conteiner-input-altera {
+  position: relative;
+}
+
+#conteiner-input {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  margin-top: 1rem;
+  background-color: rgb(207,14,14);
+  opacity: 0.8;
+  color: white;
+  padding: 1em 0.25em;
+  border-radius: 1em;
+  border: none;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #333333;
+  padding: 0.2em 0.5em;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid #333333;
+}
